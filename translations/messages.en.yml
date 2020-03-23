@@ -1,0 +1,26 @@
+# /translation/messages.en.yml
+
+Panier:
+  titre: 'Cart'
+  nom: 'Name'
+  quantite: 'Quantity'
+  prix: 'Price'
+  nbrProduits: 'Number of product'
+  cout: 'Total cost of the cart'
+  supprimer: 'Delete'
+
+  
+Produit:
+  titre: 'Products'
+  nom: 'Name'
+  quantite: 'Quantity'
+  image: 'Image'
+  prix: 'Price'
+  supprimer: 'Delete'
+  ajout: 'Add a product'
+
+Nom: 'Name'
+photo: 'Image'
+Quantite: 'Quantity'
+Prix: 'Price'
+Submit: 'Submit'

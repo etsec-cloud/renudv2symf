@@ -1,0 +1,34 @@
+# /translation/messages.fr.yml
+
+Panier:
+  titre: 'Panier'
+  nom: 'Nom'
+  quantite: 'Quantité'
+  prix: 'Prix'
+  nbrProduits: 'Nombre de produits'
+  cout: 'Cout total du panier'
+  supprimer: 'Supprimer'
+
+  
+Produit:
+  titre: 'Produits'
+  nom: 'Nom'
+  quantite: 'Quantité'
+  image: 'Image'
+  prix: 'Prix'
+  supprimer: 'Supprimer'
+
+
+Nom: 'Nom'
+photo: 'Image'
+Quantite: 'Quantité'
+Prix: 'Prix'
+Submit: 'Ajouter'
+
+
+
+
+
+
+
+

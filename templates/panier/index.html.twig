@@ -1,0 +1,45 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello PanierController!{% endblock %}
+
+{% block body %}
+
+<table class="table">
+    <thead>
+        <tr>
+            <td> {{'Panier.nom'|trans}}</td>
+            <td> {{'Panier.quantite'|trans}}</td>
+            <td> {{'Panier.prix'|trans}}</td>
+        </tr>
+    </thead>
+    <tbody> 
+        
+                    
+            {% set cout_panier = 0 %}
+            {% set nbr_produit = 0 %}
+
+            {% for panier in paniers %}
+                <tr>
+                    <td> {{panier.nom}} </td>
+                    <td> {{panier.qtet}} </td>
+
+                    {% set cout_total = (panier.qtet * panier.prix) %}
+                    {% set cout_panier = cout_panier + cout_total %}
+
+                    {% set nbr_produit = nbr_produit + 1 %}
+
+
+                    <td>{{cout_total}}</td>
+                    <td><a href="{{path('delete_produit_panier', {'id':panier.id}) }}"> {{'Panier.supprimer'|trans}} </a> </td>
+                </tr>
+            {% endfor %}    
+  
+            <tr>
+                <td> {{'Panier.nbrProduits'|trans}} : {{nbr_produit}} </td>
+
+                <td> {{'Panier.cout'|trans}}: {{cout_panier}} €</td>
+            </tr>
+
+    </tbody>
+</table>
+{% endblock %}
